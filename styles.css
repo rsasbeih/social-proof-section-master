@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+:root {
+  --primary-color-magenta: hsl(300, 43%, 22%);
+  --primary-color-pink: hsl(333, 80%, 67%);
+  --secondary-color-magenta: hsl(303, 10%, 53%);
+  --secondary-color-gray: hsl(300, 24%, 96%);
+  --secondary-color-white: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  font-size: 15px;
+  font-family: "League Spartan";
+  background: url("images/bg-pattern-top-desktop.svg"),
+    url("images/bg-pattern-bottom-desktop.svg");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.banner__info {
+  margin: 5em;
+  padding: 2em;
+  text-align: center;
+}
+.banner__info h1 {
+  color: var(--primary-color-magenta);
+  font-size: 3em;
+}
+.banner__info p {
+  color: var(--primary-color-magenta);
+  /* padding: 1em; */
+}
+/* .banner__ratings {
+} */
+.banner__ratings--item {
+  background-color: var(--secondary-color-gray);
+  color: var(--primary-color-magenta);
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 1em 0.5em;
+  margin: 0.5em;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.banner__ratings--stars {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.banner__ratings--item p {
+  padding: 0.5em;
+}
+.reviews {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+.review {
+  background-color: var(--primary-color-magenta);
+  border-radius: 8px;
+  padding: 2em 2em;
+  margin: 1em;
+}
+.review__author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.review__author--info {
+  margin-left: 1em;
+}
+.review__img {
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+}
+.review__name {
+  color: var(--secondary-color-white);
+  font-weight: 700;
+  padding: 0.2em;
+}
+.review__verification {
+  color: var(--primary-color-pink);
+  padding: 0.2em;
+}
+.review__description {
+  color: var(--secondary-color-white);
+}
