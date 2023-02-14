@@ -29,7 +29,7 @@ body {
   justify-content: space-around;
   flex-direction: row;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .banner {
     flex-direction: column;
   }
@@ -38,6 +38,11 @@ body {
   margin: 5em;
   padding: 2em;
   text-align: center;
+}
+@media (max-width: 800px) {
+  .banner__info {
+    margin: 1em;
+  }
 }
 .banner__info h1 {
   color: var(--primary-color-magenta);
@@ -83,7 +88,7 @@ body {
   flex-direction: row;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .reviews {
     flex-direction: column;
   }
